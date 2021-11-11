@@ -1,0 +1,55 @@
+C:\Users\user>mysql -u root
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 26
+Server version: 10.4.18-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++---------------------+
+| Database            |
++---------------------+
+| agroculture         |
+| exams               |
+| grocery             |
+| healthelic_pharmacy |
+| hp_mgmt_db          |
+| information_schema  |
+| joomla              |
+| joomla_db           |
+| library             |
+| mysql               |
+| performance_schema  |
+| phpmyadmin          |
+| school              |
+| shule               |
+| test                |
++---------------------+
+15 rows in set (0.001 sec)
+
+MariaDB [(none)]> use exams;
+Database changed
+MariaDB [exams]> show tables;
++-----------------+
+| Tables_in_exams |
++-----------------+
+| persons         |
++-----------------+
+1 row in set (0.001 sec)
+
+MariaDB [exams]> select * from persons;
++-----------+------------+-------------+-----------+--------+-------+------+------------------------------------------------+
+| Person_ID | First_Name | Middle_Name | Last_Name | Gender | D_O_B | PIN  | Photo                                          |
++-----------+------------+-------------+-----------+--------+-------+------+------------------------------------------------+
+| 001       | John       | don         | doe       | Male   | 1998  | 123  | C:/Users/user/Desktop/AETEB_exams/Images/1.jpg |
+| 002       | ben        | doe         | daudi     | Male   | 2000  | 456  | C:/Users/user/Desktop/AETEB_exams/Images/2.jpg |
+| 003       | brian      | moenga      | panda     | Male   | 2007  | 78   | C:/Users/user/Desktop/AETEB_exams/Images/3.jpg |
+| 004       | gladis     | moenga      | mwangi    | female | 2010  | 90   | C:/Users/user/Desktop/AETEB_exams/Images/4.jpg |
+| 005       | gloria     | panda       | mweni     | female | 2012  | 910  | C:/Users/user/Desktop/AETEB_exams/Images/5.jpg |
+| 005       | gloria     | panda       | mweni     | female | 2012  | 910  | C:/Users/user/Desktop/AETEB_exams/Images/5.jpg |
++-----------+------------+-------------+-----------+--------+-------+------+------------------------------------------------+
+6 rows in set (0.000 sec)
+
+MariaDB [exams]>

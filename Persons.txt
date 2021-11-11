@@ -1,0 +1,15 @@
+create table Persons(Person_ID varchar(20), 
+First_Name varchar(100), 
+Middle_Name varchar(100), 
+Last_Name varchar(100), 
+Gender varchar(20), 
+D_O_B varchar(20),
+PIN varchar(100), 
+Photo varchar(100)
+);
+
+
+alter table persons,
+add constraint,
+foreign key (person_id) references persons (person_id)
+;

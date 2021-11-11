@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="AETEB_exams:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AETEB_exams_jar</output-path>
+    <root id="archive" name="AETEB_exams.jar">
+      <element id="module-output" name="AETEB_exams" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Program Files/Java/mysql-connector-java-8.0.15/mysql-connector-java-8.0.15.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
